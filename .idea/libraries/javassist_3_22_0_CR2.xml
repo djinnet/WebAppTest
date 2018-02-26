@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javassist-3.22.0-CR2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/javassist-3.22.0-CR2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

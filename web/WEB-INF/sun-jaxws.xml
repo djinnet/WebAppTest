@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+
+    <endpoint name="HelloWorld" implementation="PackageFoo.soapws.HelloWorldImpl" url-pattern="/soap" />
+</endpoints>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="saaj-impl">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/saaj-impl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

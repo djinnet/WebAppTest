@@ -1,0 +1,70 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebAppTest:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebAppTest_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WebAppTest/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebAppTest" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/sqlite-jdbc-3.21.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" />
+          <element id="library" level="project" name="javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="JAX-RS" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-client.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-common.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-server.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-media-sse.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-media-json-binding.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-media-jaxb.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-hk2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-container-servlet.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jersey-container-servlet-core.jar" />
+          <element id="library" level="project" name="javax.activation:activation:1.1.1" />
+          <element id="library" level="project" name="javax.xml.bind:jaxb-api:2.3.0" />
+          <element id="library" level="project" name="yasson-1.0" />
+          <element id="library" level="project" name="validation-api-1.1.0.Final" />
+          <element id="library" level="project" name="persistence-api-1.0" />
+          <element id="library" level="project" name="osgi-resource-locator-1.0.1" />
+          <element id="library" level="project" name="org.osgi.core-4.2.0" />
+          <element id="library" level="project" name="jsr250-api-1.0" />
+          <element id="library" level="project" name="jboss-interceptors-api_1.1_spec-1.0.0.Beta1" />
+          <element id="library" level="project" name="jaxb-api-2.2.7" />
+          <element id="library" level="project" name="javax.json-api-1.1" />
+          <element id="library" level="project" name="javax.json-1.1" />
+          <element id="library" level="project" name="javax.json.bind-api-1.0" />
+          <element id="library" level="project" name="javax.inject-2.5.0-b42" />
+          <element id="library" level="project" name="javax.inject-1" />
+          <element id="library" level="project" name="javax.annotation-api-1.2" />
+          <element id="library" level="project" name="javassist-3.22.0-CR2" />
+          <element id="library" level="project" name="hk2-utils-2.5.0-b42" />
+          <element id="library" level="project" name="hk2-locator-2.5.0-b42" />
+          <element id="library" level="project" name="hk2-api-2.5.0-b42" />
+          <element id="library" level="project" name="el-api-2.2" />
+          <element id="library" level="project" name="cdi-api-1.1" />
+          <element id="library" level="project" name="aopalliance-repackaged-2.5.0-b42" />
+          <element id="library" level="project" name="FastInfoset" />
+          <element id="library" level="project" name="javax.annotation-api" />
+          <element id="library" level="project" name="jaxb-api" />
+          <element id="library" level="project" name="javax.xml.soap-api" />
+          <element id="library" level="project" name="jaxb-core" />
+          <element id="library" level="project" name="mimepull" />
+          <element id="library" level="project" name="resolver" />
+          <element id="library" level="project" name="saaj-impl" />
+          <element id="library" level="project" name="stax2-api" />
+          <element id="library" level="project" name="woodstox-core-asl" />
+          <element id="library" level="project" name="jsr181-api" />
+          <element id="library" level="project" name="com.googlecode.jtype:jtype:0.1.3" />
+          <element id="library" level="project" name="streambuffer" />
+          <element id="library" level="project" name="stax-ex" />
+          <element id="library" level="project" name="policy" />
+          <element id="library" level="project" name="management-api" />
+          <element id="library" level="project" name="ha-api" />
+          <element id="library" level="project" name="gmbal-api-only" />
+          <element id="library" level="project" name="xstream-1.4.10" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

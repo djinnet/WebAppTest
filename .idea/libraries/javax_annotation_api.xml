@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.annotation-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/javax.annotation-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

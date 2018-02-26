@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems,
+Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/j2ee/dtds/web-app_2_3.dtd">
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>Books Management Web Application</display-name>
+
+    <servlet>
+        <servlet-name>Example API</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>PackageFoo.restws</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <listener>
+        <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>Soap</servlet-name>
+        <servlet-class>
+            com.sun.xml.ws.transport.http.servlet.WSServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>downloading</servlet-name>
+        <servlet-class>PackageFoo.downloadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>downloading</servlet-name>
+        <url-pattern>/downloading</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Example API</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>PackageFoo.ControllerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CreateBookView</servlet-name>
+        <jsp-file>/views/CreateBookView.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewForm</servlet-name>
+        <jsp-file>/views/BookForm.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>xmlSoapPage</servlet-name>
+        <jsp-file>/views/TestSoapPage.jsp</jsp-file>
+    </servlet>
+
+    <session-config>
+        <session-timeout>120</session-timeout>
+    </session-config>
+
+
+    <servlet-mapping>
+        <servlet-name>xmlSoapPage</servlet-name>
+        <url-pattern>/soap/xml</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Soap</servlet-name>
+        <url-pattern>/soap</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CreateBookView</servlet-name>
+        <url-pattern>/CreateBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ViewForm</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>views/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/views/Error.jsp</location>
+    </error-page>
+</web-app>

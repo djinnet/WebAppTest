@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hk2-api-2.5.0-b42">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/hk2-api-2.5.0-b42.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

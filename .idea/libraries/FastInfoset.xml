@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FastInfoset">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/FastInfoset.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
